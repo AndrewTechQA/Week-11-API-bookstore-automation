@@ -2,8 +2,7 @@ const axios = require("axios");
 const baseUrl = 'https://f4hatlr72b.execute-api.us-east-1.amazonaws.com/production/'
 const { assert } = require("chai");
 const faker = require('faker');
-const randomTitle = faker.random.words();
-const randomBookTitle = {title: randomTitle, author: "Andrew Smyelov"};
+const randomBookTitle = {title: faker.random.words(), author: "Andrew Smyelov"};
 const bookId = '7ae127f44a74d7cf436e7142fbb92ed6';
 
 class BooksApi {
